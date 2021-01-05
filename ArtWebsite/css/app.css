@@ -20,6 +20,15 @@ ul {
     padding: 0;
 }
 
+.button {
+    height: 35px;
+    padding: 0 20px;
+    background-color:#fdc500;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
 /* Header */
 
 header {
@@ -54,8 +63,8 @@ header #branding {
     width: 30%;
 }
 
-header #branding h1{
-    margin: 0;
+header h1{
+    letter-spacing: 0.02em;
 }
 
 header nav {
@@ -63,8 +72,7 @@ header nav {
     width: 70%;
     padding-top: 0;
     padding-bottom: 20px;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 header a:hover {
@@ -130,6 +138,7 @@ header a:hover {
 #boxes {
     margin-top: 20px;
     min-height: 50px;
+    font-size: 14px;
 }
 
 #boxes .box {
@@ -144,9 +153,80 @@ header a:hover {
     width: 80px;
 }
 
+
+/* about page*/
+
+#main {
+    color: #333;
+}
+
+.dark {
+    background: #333;
+    color: #fff;
+    padding: 10px;;
+
+}
+#main-col {
+    float: left;
+    width: 65%;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+/* Services page*/
+#services li{
+    background: rgb(238, 236, 236);
+    border: #e7e1e1 solid 1px;
+    padding: 10px;
+    margin-bottom: 5px;;
+}
+
+#sidebar .quote input, textarea {
+width: 90%;
+padding: 5px;
+}
+
+
 footer {
     background-color: #fcbf49;
     padding: 20px;
     margin-top: 20em;
     text-align: center;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+}
+
+
+@media(max-width: 768px){
+header #branding,
+header nav, header li , #subscribe h1, #subscribe form,
+#boxes .box,
+article#main-col, aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    padding-bottom: 20px;
+}
+
+#showcase h1 {
+    margin-top: 40px;
+}
+
+#subscribe .button, .quote .button {
+    display: block;
+    width: 100%;
+}
+
+#subscribe form input[type="email"], .quote input, .quote textarea{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
 }
