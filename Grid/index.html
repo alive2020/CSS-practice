@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /* grid-column-gap: 10px;
+            grid-row-gap: 10px; */
+            grid-gap: 10px;
+        }
+
+        .wrapper div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci non voluptates provident ducimus
+                assumenda nihil facilis ad corporis iusto Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt, ratione.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci non voluptates provident ducimus.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci non voluptates provident ducimus
+                assumenda nihil facilis ad corporis iusto Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt, ratione.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci non voluptates provident ducimus
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
